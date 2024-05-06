@@ -80,7 +80,8 @@ public class ExtentCucumberFormatter implements Reporter, Formatter {
         return htmlReporter;
     }
 
-    private static void setExtentReport() throws UnsupportedEncodingException {
+    @SuppressWarnings("deprecation")
+	private static void setExtentReport() throws UnsupportedEncodingException {
         if (extentReports != null) {
             return;
         }
